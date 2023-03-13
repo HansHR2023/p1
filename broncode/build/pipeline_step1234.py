@@ -108,7 +108,7 @@ df3.to_csv('df3.csv')
 print('Generated DF3: succesfully written to df3.csv')
 
 
-dbConnection.commit
+dbConnection.commit()
 dbConnection.close()
 
 
