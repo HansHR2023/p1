@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Imports
 import logging
 import pandas as pd
@@ -10,7 +12,7 @@ from sklearn.model_selection import train_test_split
 # logging info
 logging.basicConfig(level=logging.DEBUG)
 
-dbName = "../../rest_server/medisch_centrum_randstad/db.sqlite3"
+dbName = "../../rest_server_new/medisch_centrum_randstad/db.sqlite3"
 tableName = "rest_api_netlify"
 url = "http://localhost:8080/medish_centrum_randstad/api/netlify?page=1"
 csvFile = "rest_server_new/medisch_centrum_randstad/data/data.csv"
