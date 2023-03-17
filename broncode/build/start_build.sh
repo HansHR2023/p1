@@ -1,3 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-python pipeline_step_12345.py
+python pipeline_data_model_production.py
+python pipeline_regression_model_production.py

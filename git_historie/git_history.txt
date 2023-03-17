@@ -1,0 +1,16 @@
+d15271a worked on interface.py and added pipreqs, readme
+51eda56 added run/interface.py
+c49c7b9 added def pipeline
+ccded9d pipeline repair and added nb 6 presentation
+64e8d62 nb 5 model added lifespan_predict
+7f2b5ea added nb 5 and pipeline_step_12345 for modelling
+5f67434 fix to gitignore
+1f75c85 added pipeline_1234.py + start_buils.sh
+d0f8a7c added nb_step_1234 + py_step_1234
+94e8ad1 nb 1 + nb 3 : added write.to_sql
+2d7d2e8 added rest server 2 - sql db 2 - updated nb 1
+4f853bd add nb 3:cleaning + cleaned_data_2.csv
+5a2c858 added #comments to nb 1
+1adfa84 Add step 1 and csv files
+174a544 initial project setup
+90cc516 Initial commit

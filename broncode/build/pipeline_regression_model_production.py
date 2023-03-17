@@ -13,7 +13,7 @@ from os import system
 import pickle
 
 # runs the pipeline to ensure to run regression from the most up to date data.
-system('python broncode/build/pipeline_data_model_production.py') 
+# system('python broncode/build/pipeline_data_model_production.py') 
 
 #import model data from pipeline, in this case SQLlite in same folder 
 ## saving the new df to SQL
@@ -70,7 +70,4 @@ dbConnection.close()
 # save trained model to pickle
 with open("regr_model.pkl", "wb") as f:
     pickle.dump(regr, f)
-
-
-
 

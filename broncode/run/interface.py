@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+
 """Interface for health_app"""
 # imports
 import pandas as pd
@@ -10,10 +13,11 @@ with open("../build/regr_model.pkl", "rb") as f:
 
 # explanation
 print()
-print('Welkom bij de lifespan calculator!')
-print('De calculator berekent de levensverwachting.')
-print('Voer voor elk kenmerk een heel getal in binnen de gegeven range.')
-print('Na 3 foutieve invoerpogingen stopt het programma')
+print('Welkom bij de lifespan calculator! \n',
+'- de calculator berekent de levensverwachting \n',
+'- voer voor elk kenmerk een heel getal in binnen de gegeven range \n',
+'- na 3 foutieve invoerpogingen stopt het programma')
+print()
 
 # hide error messages after 3 wrong inputs
 sys.tracebacklimit = 0
@@ -36,7 +40,7 @@ def inputDigit(message, acceptableRange):
 
         i += 1
         if i == 3:
-            raise Exception('driemaal een onjuiste invoer. Het programma is gestopt, maar kan opnieuw worden opgestart')
+            raise Exception('driemaal een onjuiste invoer. Het programma is gestopt, maar kan opnieuw worden opgestart.')
 
 # input vars
 # genetic = float(input('Vul de genetische leeftijd in: '))
@@ -91,24 +95,24 @@ premie_korting = (1-premie_factor)*100
 
 #print the results
 print()
-print(f'De levensverwachting is: {lifespan_predict}')
+print(f'De levensverwachting is: {round(lifespan_predict[0], 2)}')
 print()
 
 print(f'De bmi is: {bmi}')
 print()
 if bmi < 18:
     print('De bmi classificatie is: ondergewicht')
-if bmi >= 18 and bmi < 25:
+elif bmi >= 18 and bmi < 25:
     print('De bmi classificatie is: normaal')
-if bmi >= 25:
+else:
     print('De bmi classificatie is: overgewicht')
 
 
 print()
 if premie_korting > 0:
-    print(f'De premiekorting is: {premie_korting} %')
+    print(f'De premiekorting is: {round(premie_korting[0], 2)} %')
 else:
-    print(f'De premieverhoging is: {abs(premie_korting)} %')
+    print(f'De premieverhoging is: {round(abs(premie_korting[0]), 2)} %')
 print()
 print()
 
