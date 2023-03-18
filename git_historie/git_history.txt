@@ -1,3 +1,5 @@
+8905b96 edit readme.md and added presentatie p1.pptx
+1e29d55 test, cleanup and added documentation
 d15271a worked on interface.py and added pipreqs, readme
 51eda56 added run/interface.py
 c49c7b9 added def pipeline
