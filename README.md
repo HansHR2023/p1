@@ -21,7 +21,13 @@ The interface program for use by the health consultant loads the trained model f
 
 Alternatively the coefficients and the intercept, decribing the trained model, are saved to a SQLite database, to be used by an app on a mobile phone. This is because the app isn't running on the Python programming language and therefore cannot use the trained model.
 
-p1/advies
+This interface.py has an improved version, called:
+command_interface_production.py
+This is a Work In Progress, as many improvements can still be done.
+As described in the advies/Presentatie p1.pptx
+
+
+p1/advies/Presentatie p1.pptx
 A powerpoint with a brief report including advice and ethics.
 
 p1/onderbouwing
